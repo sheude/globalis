@@ -50,6 +50,16 @@ function register_post_type_event()
                 $result = $wpdb->get_row($sql_query, ARRAY_A);
                 echo $result['count'];
             }],
+            'export' => ['title' => 'Exportations', 'sortable' => false, 'function' => function () {
+                global $post;
+                $url = add_query_arg([
+                    'action'   => 'export_registrations',
+                    'event_id' => $post->ID,
+                ], admin_url('admin-post.php'));  // URL qui déclenche l'export
+                
+                // Afficher le bouton Export
+                echo '<a href="' . esc_url($url) . '" class="button button-primary">Exporter</a>';
+            }],
         ],
         'admin_filters'        => [],
     ];
