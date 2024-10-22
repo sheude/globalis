@@ -69,7 +69,7 @@ function register_post_type_registration()
         'hierarchical'        => false,
         'public'              => true,
         'exclude_from_search' => true,
-        'publicly_queryable'  => true,
+        'publicly_queryable'  => false,
         'show_ui'             => true,
         'show_in_menu'        => true,
         'show_in_nav_menus'   => false,
@@ -81,7 +81,7 @@ function register_post_type_registration()
         // 'map_meta_cap'        => false,
         'supports'            => false,
         'has_archive'         => false,
-        'rewrite'             => ['slug' => 'registrations', 'pages' => true, 'feeds' => false, 'with_front' => false],
+        'rewrite'             => false,
         'query_var'           => false,
         // Extended
         'show_in_feed'         => false,
