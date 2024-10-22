@@ -1,0 +1,41 @@
+# Configuration
+/config/vars.*
+!/config/vars.sample.php
+/config/local.php
+
+# .htaccess
+/.htaccess
+/config/htaccess/*-local
+/web/.htaccess
+/web/.htpasswd
+
+# Composer
+/vendor
+
+# File system files
+.DS_Store
+*~
+.fuse*
+
+# Security
+*.db
+
+# Logs
+/log/*
+!/log/.gitkeep
+*.log
+
+# WordPress core
+/web/wpcb
+
+# WordPress temp files
+/web/app/cache
+/web/app/upgrade
+
+# WordPress Plugins
+/web/app/modules/*
+!/web/app/modules/.gitkeep
+
+# WordPress Media / Uploads
+/web/media/*
+!/web/media/.gitkeep

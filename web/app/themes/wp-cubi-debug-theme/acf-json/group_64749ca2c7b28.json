@@ -1,0 +1,128 @@
+{
+    "key": "group_64749ca2c7b28",
+    "title": "Registration details",
+    "fields": [
+        {
+            "key": "field_64749cde33fd7",
+            "label": "Event",
+            "name": "registration_event_id",
+            "aria-label": "",
+            "type": "post_object",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "events"
+            ],
+            "post_status": "",
+            "taxonomy": "",
+            "return_format": "id",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 1
+        },
+        {
+            "key": "field_64749cfff238e",
+            "label": "Last name",
+            "name": "registration_last_name",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": 150,
+            "placeholder": "Exampe: Foo",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64749d4bf238f",
+            "label": "First name",
+            "name": "registration_first_name",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": 150,
+            "placeholder": "Exampe: Bar",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64749d780cd14",
+            "label": "Email",
+            "name": "registration_email",
+            "aria-label": "",
+            "type": "email",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Example: foo.bar@example.com",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64749d920cd15",
+            "label": "Phone (optional)",
+            "name": "registration_phone",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": 20,
+            "placeholder": "Example: +33612345678",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "registrations"
+            }
+        ]
+    ],
+    "menu_order": 50,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": false,
+    "modified": 1685364374
+}
